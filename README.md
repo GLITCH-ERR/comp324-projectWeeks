@@ -7,3 +7,11 @@ This project is multiple, single-page websites I built for a COMP 324 to practic
 ## Details
 
 The different folders should contain their own README.md-ses that hold their own information of the different HTMLs.
+
+## Finished Sites
+
+A1 - WEEK1-SITE [1/16/2026]
+
+## Expect Updates
+
+Main README.md
