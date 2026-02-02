@@ -10,14 +10,20 @@ if (!form || !emailInput || !message) {
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const email = emailInput.value.trim();
+
+    // Clear any previous custom validity message
+    emailInput.setCustomValidity('');
 
     if (!emailInput.validity.valid) {
-        message.textContent = "Please enter a valid email address.";
+        if (emailInput.validity.valueMissing) {
+            message.textContent = "The email field is required.";
+        } else if (emailInput.validity.typeMismatch) {
+            message.textContent = "Please enter a valid email address (e.g., name@domain.com).";
+        }
         return;
     }
 
-    message.textContent = `Thanks! We will contact ${email}.`;
+    message.textContent = `Thanks! We will contact ${emailInput.value.trim()}.`;
     form.reset();
 });
 
