@@ -16,7 +16,7 @@ These elements improve readability, organization, and accessibility.
 
 ## 3) Accessibility Choice
 I used proper `<label>` elements for the form input and ensured visible keyboard focus using the `:focus-visible` CSS rule.
-Added: 'skip-link'
+Added: `skip-link`
 
 ## 4) Layout / Responsive Choice
 To keep the page readable on different screen sizes, I constrained the main content using a `max-width` and added consistent padding. This prevents overly long line lengths on large screens while still working well on smaller devices.
