@@ -1,4 +1,5 @@
 # Week 1 Single-Page Site
+UPDATED - Fixes and Added Code from Feedback (Rest will Be added later)
 
 ## 1) Task + Intended Audience
 This project is a single-page website built for a Week 1 assignment to practice basic client-side web development using HTML, CSS, and JavaScript. The intended audience is general users who want to view simple content and sign up with their email (Note: not a real sign up).
@@ -15,6 +16,7 @@ These elements improve readability, organization, and accessibility.
 
 ## 3) Accessibility Choice
 I used proper `<label>` elements for the form input and ensured visible keyboard focus using the `:focus-visible` CSS rule.
+Added: 'skip-link'
 
 ## 4) Layout / Responsive Choice
 To keep the page readable on different screen sizes, I constrained the main content using a `max-width` and added consistent padding. This prevents overly long line lengths on large screens while still working well on smaller devices.
