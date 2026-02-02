@@ -5,15 +5,15 @@ const emailInput = document.querySelector('#email');
 const message = document.querySelector('#form-message');
 
 if (!form || !emailInput || !message) {
-    throw new Error('Missing expected elements in the page');
+    console.warn("Missing expected elements in the page");
 }
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
     const email = emailInput.value.trim();
-    if (!email) {
-        message.textContent = 'Please enter an email.';
+
+    if (!emailInput.validity.valid) {
+        message.textContent = "Please enter a valid email address.";
         return;
     }
 
@@ -23,7 +23,7 @@ form.addEventListener('submit', (event) => {
 
 const toggle = document.querySelector('#theme-toggle');
 if (!toggle) {
-    throw new Error('Missing #theme-toggle');
+    console.warn("Missing #theme-toggle");
 }
 
 toggle.addEventListener('click', () => {
