@@ -65,3 +65,15 @@ body.dark {
 body.dark header {
     border-bottom-color: #333;
 }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: white;
+  padding: 0.5rem;
+}
