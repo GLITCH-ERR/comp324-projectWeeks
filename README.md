@@ -18,5 +18,5 @@ A2 - WEEK2-FORM [2/1/2026]
 ## Expect Updates
 
 Main README.md \
-A1 - Update_A1-Feedback-2 *After A2* \
-A2 - Update_A2-Feedback *After A2?* 
+A1 - Update_A1-Feedback-2 | *After A2* \
+A2 - Update_A2-Feedback | *After A2?* 
