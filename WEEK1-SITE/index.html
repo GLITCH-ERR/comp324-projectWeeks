@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
         <title>Week 1 Site</title>
+
         <link rel="stylesheet" href="styles.css" />
     </head>
+
     <body>
+        <a href="#main" class="skip-link">Skip to content</a>
+
         <header>
             <p class="site-title">Week 1 Site</p>
+
             <nav aria-label="Primary">
                 <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </nav>
+
             <button id="theme-toggle" type="button">Toggle Theme</button>
         </header>
 
@@ -27,9 +35,10 @@
                 
                 <form id="signup-form">
                     <label for="email">Email</label>
+
                     <input id="email" name="email" type="email" autocomplete="email" required />
                     
-                    <button type="submit">Sign up</button>
+                    <button id="submit" type="submit">Sign up</button>
                     
                     <p id="form-message" role="status"></p>
                 </form>
@@ -39,6 +48,7 @@
         <footer>
             <small>Built in CS 324/424</small>
         </footer>
+        
         <script src="app.js"></script>
     </body>
 </html>
