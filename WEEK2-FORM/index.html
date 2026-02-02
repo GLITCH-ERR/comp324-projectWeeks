@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 2 — Form Feedback</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header>
+      <p class="site-title">Week 2 Form</p>
+      <nav aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1>Form with accessible feedback</h1>
+      <p>
+        Shows a form with validation messages and DOM updates.
+      </p>
+
+      <section aria-labelledby="signup-title">
+        <h2 id="signup-title">Sign up</h2>
+
+        <form id="signup-form" novalidate>
+          <fieldset>
+            <legend>Account</legend>
+
+            <div class="field">
+              <label for="name">Name</label>
+              <p id="name-help">At least 2 characters.</p>
+
+              <input id="name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="name-help" />
+              <p class="field-error" id="name-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <p id="email-help">Ex: name@example.com</p>
+
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-help" />
+              <p class="field-error" id="email-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <p id="password-help">At least 8 characters.</p>
+
+              <input id="password" name="password" type="password" required minlength="8" aria-describedby="password-help" />
+              <p class="field-error" id="password-error"></p>
+              
+            </div>
+          </fieldset>
+
+          <button type="submit">Create account</button>
+
+          <p id="form-message" role="status" aria-live="polite" class="form-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <small>Built in CS 324/424</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
