@@ -66,7 +66,7 @@ The teaser cards switch from stacked to two columns at 700px using CSS grid.
 ## 4) Screenshots
 
 - Before (Computer)
-![Website before updating on computer](/Screenshots/WK3-Computer_Before.png)
+![Website before updating on computer](\comp324-projectWeeks\WEEK3-LAYOUT\Screenshots\WK3-Computer_Before.png)
 
 - After (Computer)
 ![Website after updating on computer](comp324-projectWeeks\WEEK3-LAYOUT\Screenshots\WK3-Computer_After.png)
