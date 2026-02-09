@@ -27,25 +27,23 @@ This example is intentionally “ugly”. Your job is to make it readable.
 
 - Use Computed → Box Model to confirm margin/padding.
 - Verify your `max-width` is applied to the intended container.
-
-# Features
-
-What this WEEK3-LAYOUT holds.
+--------------------------------------------------------------------------
+# Overview of what WEEK3-LAYOUT contains.
 
 ## Index.html
 
-Unchanged from Starting Point, has the basic webpage format.
+Unchanged from the starting point; contains the basic webpage structure.
 
 ## Styles.css
 
-Changed from Starting Point. Added formating to make it readable.
+Modified from the starting point. Added formatting to improve readability and layout, including :focus-visible for improbed keyboard accessibility.
 
 ## README.md
 
-Added text to bottom of original README.md for answers and descriptions.
+Extended the original README with assignment answers and descriptions.
 
-
-# README Answers
+--------------------------------------------------------------------------
+# A3 Assignment Responses
 
 Philip Garbis - Answers for Assignment
 
@@ -65,22 +63,24 @@ The teaser cards switch from stacked to two columns at 700px using CSS grid.
 
 ## 4) Screenshots
 
-- Before (Computer)
+To have the images displayed on README.md, I looked up discussion pages on GitHub for a solution. I used the discussion page found here: https://github.com/orgs/community/discussions/22833.
+
+### Before (Computer)
 ![Website before updating on computer](Screenshots/WK3-Computer_Before.png)
 
-- After (Computer)
+### After (Computer)
 ![Website after updating on computer](Screenshots/WK3-Computer_After.png)
 
-- Before (Mobile)
+### Before (Mobile)
 ![Website before updating on mobile](Screenshots/WK3-Mobile_Before.png)
 
-- After (Mobile)
+### After (Mobile)
 ![Website after updating on mobile](Screenshots/WK3-Mobile_After.png)
 
-- Before (Tablet)
+### Before (Tablet)
 ![Website before updating on tablet](Screenshots/WK3-Tablet_Before.png)
 
-- After (Tablet)
+### After (Tablet)
 ![Website after updating on tablet](Screenshots/WK3-Tablet_After.png)
 
 
