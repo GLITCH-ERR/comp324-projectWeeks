@@ -69,19 +69,19 @@ The teaser cards switch from stacked to two columns at 700px using CSS grid.
 ![Website before updating on computer](Screenshots/WK3-Computer_Before.png)
 
 - After (Computer)
-![Website after updating on computer](/WEEK3-LAYOUT/Screenshots/WK3-Computer_After.png)
+![Website after updating on computer](Screenshots/WK3-Computer_After.png)
 
 - Before (Mobile)
-![Website before updating on mobile](/WEEK3-LAYOUT/Screenshots/WK3-Mobile_Before.png)
+![Website before updating on mobile](Screenshots/WK3-Mobile_Before.png)
 
 - After (Mobile)
-![Website after updating on mobile](/WEEK3-LAYOUT/Screenshots/WK3-Mobile_After.png)
+![Website after updating on mobile](Screenshots/WK3-Mobile_After.png)
 
 - Before (Tablet)
-![Website before updating on tablet](/WEEK3-LAYOUT/Screenshots/WK3-Tablet_Before.png)
+![Website before updating on tablet](Screenshots/WK3-Tablet_Before.png)
 
 - After (Tablet)
-![Website after updating on tablet](/WEEK3-LAYOUT/Screenshots/WK3-Tablet_After.png)
+![Website after updating on tablet](Screenshots/WK3-Tablet_After.png)
 
 
 ## 5) DevTools insight
