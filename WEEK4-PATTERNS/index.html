@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 4 Starter — Layout Patterns</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="title">Nova Library</div>
+          <div class="subtitle">Layout patterns starter</div>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#" class="nav-link">Browse</a>
+        <a href="#" class="nav-link">Collections</a>
+        <a href="#" class="nav-link">Favorites</a>
+        <a href="#" class="nav-link">Settings</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn">New</button>
+        <button class="btn btn-primary">Share</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="list" aria-label="Cards">
+        <h1 class="h1">Browse</h1>
+        <p class="lede">Today you’ll turn this into a responsive list + detail layout using flexbox + grid.</p>
+
+        <div class="card-grid" id="cardGrid">
+          <button class="card" data-title="Aster" data-kind="Article" data-desc="Short, readable content block.">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <div class="card-title">Aster</div>
+              <div class="card-meta">Article • 5 min</div>
+            </div>
+          </button>
+          <button class="card" data-title="Kite" data-kind="Case study" data-desc="Layout patterns in the wild.">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <div class="card-title">Kite</div>
+              <div class="card-meta">Case study • 12 min</div>
+            </div>
+          </button>
+          <button class="card" data-title="Echo" data-kind="Guide" data-desc="A quick grid recipe using auto-fit/minmax.">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <div class="card-title">Echo</div>
+              <div class="card-meta">Guide • 8 min</div>
+            </div>
+          </button>
+          <button class="card" data-title="Orbit" data-kind="Toolkit" data-desc="Spacing systems: container padding + gap.">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <div class="card-title">Orbit</div>
+              <div class="card-meta">Toolkit • 3 min</div>
+            </div>
+          </button>
+          <button class="card" data-title="Pulse" data-kind="Demo" data-desc="Reduced-motion friendly transitions.">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <div class="card-title">Pulse</div>
+              <div class="card-meta">Demo • 6 min</div>
+            </div>
+          </button>
+          <button class="card" data-title="Mosaic" data-kind="Gallery" data-desc="Grid is great when you need rows and columns.">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <div class="card-title">Mosaic</div>
+              <div class="card-meta">Gallery • 10 min</div>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <aside class="detail" aria-label="Detail">
+        <h2 class="h2">Detail</h2>
+        <p class="muted">Select a card to show detail.</p>
+
+        <div class="detail-card" id="detailCard">
+          <div class="detail-title" id="detailTitle">Nothing selected</div>
+          <div class="detail-meta" id="detailMeta">—</div>
+          <p class="detail-desc" id="detailDesc">This panel is here so you can practice list + detail layout.</p>
+          <div class="detail-actions">
+            <button class="btn">Save</button>
+            <button class="btn btn-primary">Open</button>
+          </div>
+        </div>
+
+        <p class="hint">Studio extension idea: make this panel sticky on desktop.</p>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
