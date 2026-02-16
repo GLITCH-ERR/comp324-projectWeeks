@@ -13,8 +13,8 @@ The different folders should contain their own README.md files that hold their o
 A1 - WEEK1-SITE [1/16/2026]  
     - Update_A1-Feedback-1 [2/1/2026]  
     >   *Partial Update* \
-A2 - WEEK2-FORM [2/1/2026]
-A3 - WEEK3-LAYOUT [2/9/2026]
+A2 - WEEK2-FORM [2/1/2026] \
+A3 - WEEK3-LAYOUT [2/9/2026] \
 A4 - WEEK4-PATTERNS [2/16/2026]
 
 ## Expect Updates
