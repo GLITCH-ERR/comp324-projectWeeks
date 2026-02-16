@@ -15,10 +15,12 @@ A1 - WEEK1-SITE [1/16/2026]
     >   *Partial Update* \
 A2 - WEEK2-FORM [2/1/2026]
 A3 - WEEK3-LAYOUT [2/9/2026]
+A4 - WEEK4-PATTERNS [2/16/2026]
 
 ## Expect Updates
 
 Main README.md \
 A1 - Update_A1-Feedback-2 | *Later* \
 A2 - Update_A2-Feedback | *Later*  \
-A3 - Update_A2-Feedback | *??????*  
+A3 - Update_A3-Feedback | *??????*  \
+A4 - Update_A4-Feedback | *??????*  
