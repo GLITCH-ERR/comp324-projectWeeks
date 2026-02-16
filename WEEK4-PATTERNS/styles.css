@@ -1,0 +1,253 @@
+/* Week 4 starter: intentionally incomplete.
+   Goal: add flex/grid + responsive behavior.
+*/
+
+:root {
+  /* Simplified, flat dark palette. */
+  --bg: #0b1220;
+  --panel: #111a2a;
+  --panel-2: #162033;
+  --text: #f3f6fb;
+  --muted: #aab6cc;
+  --accent: #9ad1df;
+  --danger: #bf616a;
+
+  --radius: 10px;
+  --pad: 16px;
+  --gap: 12px;
+  --shadow: none;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.35;
+}
+
+/* Make headings/titles read as “ink”. */
+.title,
+.h1,
+.h2,
+.card-title,
+.detail-title {
+  color: rgba(255, 255, 255, 0.98);
+}
+
+.site-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: transparent;
+  border: 2px solid rgba(154, 209, 223, 0.9);
+}
+
+.title { font-weight: 750; }
+.subtitle { color: var(--muted); font-size: 0.9rem; }
+
+.site-nav {
+  margin-top: 10px;
+  /* TODO (guided build): turn this into a flex row with gap + wrapping */
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: var(--panel);
+  color: var(--text);
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.btn-primary {
+  border-color: rgba(154, 209, 223, 0.75);
+  background: rgba(154, 209, 223, 0.14);
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible,
+.card:focus-visible {
+  outline: 3px solid rgba(154, 209, 223, 0.6);
+  outline-offset: 3px;
+}
+
+.layout {
+  padding: 18px 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  /* TODO (studio): on wide screens become a 2-column list+detail layout */
+}
+
+@media (min-width: 900px) {
+  .layout {
+    display: grid;
+    gap: 24px;
+
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .detail {
+    margin-top: 0;
+  }
+}
+
+.h1 {
+  font-size: 1.45rem;
+  margin: 0 0 6px;
+}
+
+.lede {
+  margin: 0 0 14px;
+  color: var(--muted);
+  max-width: 70ch;
+}
+
+/* TODO (guided build): make .card-grid a grid gallery with auto-fit/minmax + gap */
+.card-grid {
+  display: grid;
+  gap: var(--gap);
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+}
+
+/* Adds card moving up when hovering over it */
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-4px);
+}
+
+/* For those who want reduced or no motion */
+/* Uncomment below to add it in. */
+/*
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:focus-visible {
+    transform: none;
+  }
+}*/
+
+.card {
+  width: 100%;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  /* Adds animation when hovering over cards */
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card-media {
+  height: 84px;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.card-body {
+  padding: 12px 12px 13px;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.card-meta {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.card.is-selected {
+  border-color: rgba(154, 209, 223, 0.85);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.detail {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--panel);
+}
+
+.h2 { margin: 0 0 8px; font-size: 1.1rem; }
+.muted { color: var(--muted); margin: 0 0 10px; }
+
+.detail-card {
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--panel-2);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.detail-title { font-weight: 750; margin-bottom: 4px; }
+.detail-meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 10px; }
+.detail-desc { margin: 0 0 12px; line-height: 1.5; }
+
+.detail-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.hint {
+  margin: 12px 0 0;
+  color: rgba(163, 173, 191, 0.9);
+  font-size: 0.95rem;
+}
